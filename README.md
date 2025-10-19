@@ -52,3 +52,106 @@ cd s-f-r-danbot
 Bu komutlar:
 1.GitHub reposunu bilgisayarınıza indirir.                   
 2.```cd``` komutu ile proje klasörüne geçmenizi sağlar.               
+
+
+
+
+
+
+## 4️⃣ .env Dosyasını Doldur
+
+```
+BOT_TOKEN=buraya_bot_tokeninizi_yazın
+```
+
+## 5️⃣ Botu Çalıştır
+
+```
+node index.js
+```
+1.Konsola ```[BotAdı] aktif ve hazır!``` mesajı geldiğinde bot Discord sunucunuzda aktif olur.                            
+2.Örnek komutu test etmek için sunucuda ```!ping``` yazabilirsiniz. Bot ```“Pong!”``` ile cevap verir.                             
+
+
+
+
+# 📝 Komut Eklemek
+
+1.commands klasörüne yeni bir .js dosyası oluştur:                                          
+
+```
+touch commands/hello.js
+```
+2.İçine örnek komut kodunu ekle:                                      
+
+```
+// commands/hello.js
+module.exports = {
+    name: 'hello',
+    description: 'Merhaba komutu!',
+    execute(message, args) {
+        message.channel.send(`Merhaba, ${message.author.username}!`);
+    }
+};
+```
+3.```index.js``` otomatik olarak komutu yükler, ekstra ayar yapmanıza gerek yok.      
+
+
+
+
+
+
+# 🌐 Gelecek Özellikler (Opsiyonel)
+- Slash komut desteği                      
+- Otomatik rol ve moderasyon sistemi
+- Seviye / XP sistemi / Oyun sistemi
+- Veri tabanı entegrasyonu (MongoDB, SQLite)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 📚 Kaynaklar
+- [Discord.js Resmi Dokümantasyon](https://discord.js.org/)                                        
+- [Node.js Resmi Dokümantasyon](https://nodejs.org/)                                   
