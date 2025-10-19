@@ -41,3 +41,14 @@ npm -v
 
 
 ## 2️⃣ Projeyi Klonla
+Projenizi kendi bilgisayarınıza klonlamak için aşağıdaki adımları takip edin:
+```bash 
+# GitHub deposunu klonlayın
+git clone https://github.com/afeyim/s-f-r-danbot.git
+
+# Proje klasörüne girin
+cd s-f-r-danbot
+```
+Bu komutlar:
+1.GitHub reposunu bilgisayarınıza indirir.                   
+2.```cd``` komutu ile proje klasörüne geçmenizi sağlar.               
